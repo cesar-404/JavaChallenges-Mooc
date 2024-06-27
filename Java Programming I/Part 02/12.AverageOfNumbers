@@ -1,0 +1,27 @@
+ 
+	import java.util.Scanner;
+	 
+	public class AverageOfNumbers {
+	 
+	    public static void main(String[] args) {
+	        Scanner scanner = new Scanner(System.in);
+	        double sum = 0;
+	        double numbers = 0;
+	        
+	        while(true) {
+	            System.out.println("Give a number:");
+	            int number = Integer.parseInt(scanner.nextLine());
+	            
+	            if(number != 0) {
+	                sum += number;
+	                numbers += 1;
+	                continue;
+	            }
+	            break;
+	        }
+	        
+	        double average = sum / numbers;
+	        
+	        System.out.println("Average of the numbers: " + average);
+	    }
+	}
